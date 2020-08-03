@@ -1,4 +1,6 @@
 require_relative "talks" 
+require_relative "session"
+require_relative "track"
 
 class Conference
   attr_reader :session
@@ -14,5 +16,7 @@ class Conference
   def schedule
     talks = Talks.talks_list
     @session = Session.new(talks)
+    track = Track.new(name)
+    track_morning_sessions = session.morning_sessions(track)
   end
 end

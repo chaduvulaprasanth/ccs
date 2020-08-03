@@ -10,4 +10,9 @@ class Session
     @available_minutes = nil
     @talk_start_time = nil
   end
+
+  def morning_sessions(track)
+    @start_time = Time.local(year, month, day, 9)
+    @end_time = Time.local(year, month, day, 12)
+  end
 end
