@@ -15,4 +15,9 @@ class Session
     @start_time = Time.local(year, month, day, 9)
     @end_time = Time.local(year, month, day, 12)
   end
+
+  def afternoon_sessions(track)
+    @start_time = Time.local(year, month, day, 13)
+    @end_time = Time.local(year, month, day, 17)
+  end
 end
