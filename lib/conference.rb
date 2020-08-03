@@ -28,4 +28,8 @@ class Conference
     track_afternoon_sessions = session.afternoon_sessions(track)
     @tracks << track
   end
+
+  def publish_all_tracks
+    tracks.each {|track| puts track.publish_track}
+  end
 end
