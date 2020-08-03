@@ -5,4 +5,8 @@ class Track
     @name = name
     @sessions = []
   end
+
+  def add_sessions(session)
+    @sessions << session
+  end
 end
