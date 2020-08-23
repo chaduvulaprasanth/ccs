@@ -16,6 +16,8 @@ class Conference
     publish_all_tracks
   end
 
+  private
+
   def create_track(name)
     track = Track.new(name)
     session.morning_sessions(track)

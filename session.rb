@@ -23,6 +23,8 @@ class Session
     common_job(track, @start_time, @end_time)
   end
 
+  private
+
   def common_job(track, start_time, end_time)
     @available_minutes = (end_time.to_i - start_time.to_i) / 60
     @talk_start_time =  start_time
