@@ -1,4 +1,4 @@
-module Talksdata
+module TALKSDATA
   TALKSDATA = 
   {
     "Riding Rails for 10 years lightning talk" => 5,
@@ -22,17 +22,4 @@ module Talksdata
     "Heroku A year in review 30 minutes" => 30,
     "Ruby on Rails on Minitest 30 minutes" => 30,
   }
-end
-class Talks
-  include Talksdata
-
-  attr_reader :talks_list
-
-  def initialize(talks_list)
-    @talks_list = talks_list
-  end
-
-  def self.talks_list
-    new(TALKSDATA).talks_list
-  end
 end

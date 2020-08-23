@@ -3,7 +3,7 @@
 follow below instructions to check the application
 
 ```
-$ ruby lib/conference_scheduler.rb
+$ ruby conference_scheduler.rb
 
 Track 1
 
